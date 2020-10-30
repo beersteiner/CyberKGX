@@ -1,0 +1,150 @@
+@prefix : <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology/> .
+@prefix cco: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> .
+
+<http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AllCoreOntology> rdf:type owl:Ontology ;
+                                                                              owl:versionIRI <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/AllCoreOntology> ;
+                                                                              owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/AgentOntology> ,
+                                                                                          <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/CurrencyUnitOntology> ,
+                                                                                          <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/EventOntology> ,
+                                                                                          <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/FacilityOntology> ,
+                                                                                          <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/QualityOntology> ,
+                                                                                          <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/UnitsOfMeasureOntology> ,
+                                                                                          <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/FacilityOntology> ;
+                                                                              cco:code_license <https://opensource.org/licenses/BSD-3-Clause> ;
+                                                                              cco:content_license <https://creativecommons.org/licenses/by/3.0/> ;
+                                                                              cco:copyright "COPYRIGHT © 2015-2020 CUBRC, Inc."@en ;
+                                                                              rdfs:comment "An import of all the Common Core mid-level ontologies into a single file so that content is easy to view. The All Core Ontology is not an ontology in the sense it contains no unique content. As such it should not be added to, but can be extended from."@en ;
+                                                                              rdfs:label "All Core Ontology"@en ;
+                                                                              owl:versionInfo "Version 1.3"@en .
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/CVE/158066
+<http://example.org/CVE/158066> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158067
+<http://example.org/CVE/158067> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158068
+<http://example.org/CVE/158068> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158069
+<http://example.org/CVE/158069> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158070
+<http://example.org/CVE/158070> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158071
+<http://example.org/CVE/158071> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158072
+<http://example.org/CVE/158072> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158073
+<http://example.org/CVE/158073> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158074
+<http://example.org/CVE/158074> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158075
+<http://example.org/CVE/158075> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158076
+<http://example.org/CVE/158076> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158077
+<http://example.org/CVE/158077> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/158078
+<http://example.org/CVE/158078> rdf:type owl:NamedIndividual ,
+                                         cco:Vulnerability .
+
+
+###  http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-01-01
+<http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-01-01> rdf:type owl:NamedIndividual ,
+                                                                                                      cco:InformationContentEntity ;
+                                                                                             cco:is_about <http://example.org/CVE/158066> ,
+                                                                                                          <http://example.org/CVE/158067> ,
+                                                                                                          <http://example.org/CVE/158068> ,
+                                                                                                          <http://example.org/CVE/158069> ,
+                                                                                                          <http://example.org/CVE/158070> ,
+                                                                                                          <http://example.org/CVE/158071> ,
+                                                                                                          <http://example.org/CVE/158072> ,
+                                                                                                          <http://example.org/CVE/158073> ,
+                                                                                                          <http://example.org/CVE/158074> ,
+                                                                                                          <http://example.org/CVE/158075> ,
+                                                                                                          <http://example.org/CVE/158076> ,
+                                                                                                          <http://example.org/CVE/158077> ,
+                                                                                                          <http://example.org/CVE/158078> .
+
+
+###  http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-02-01
+<http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-02-01> rdf:type owl:NamedIndividual ,
+                                                                                                      cco:InformationContentEntity ;
+                                                                                             cco:is_about <http://example.org/CVE/158066> ,
+                                                                                                          <http://example.org/CVE/158067> ,
+                                                                                                          <http://example.org/CVE/158068> ,
+                                                                                                          <http://example.org/CVE/158069> ,
+                                                                                                          <http://example.org/CVE/158070> ,
+                                                                                                          <http://example.org/CVE/158071> ,
+                                                                                                          <http://example.org/CVE/158072> ,
+                                                                                                          <http://example.org/CVE/158073> ,
+                                                                                                          <http://example.org/CVE/158074> ,
+                                                                                                          <http://example.org/CVE/158075> ,
+                                                                                                          <http://example.org/CVE/158076> ,
+                                                                                                          <http://example.org/CVE/158077> ,
+                                                                                                          <http://example.org/CVE/158078> .
+
+
+###  http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-03-01
+<http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-03-01> rdf:type owl:NamedIndividual ,
+                                                                                                      cco:InformationContentEntity ;
+                                                                                             cco:is_about <http://example.org/CVE/158066> ,
+                                                                                                          <http://example.org/CVE/158067> ,
+                                                                                                          <http://example.org/CVE/158068> ,
+                                                                                                          <http://example.org/CVE/158069> ,
+                                                                                                          <http://example.org/CVE/158070> ,
+                                                                                                          <http://example.org/CVE/158071> ,
+                                                                                                          <http://example.org/CVE/158072> ,
+                                                                                                          <http://example.org/CVE/158073> ,
+                                                                                                          <http://example.org/CVE/158074> ,
+                                                                                                          <http://example.org/CVE/158075> ,
+                                                                                                          <http://example.org/CVE/158076> ,
+                                                                                                          <http://example.org/CVE/158077> ,
+                                                                                                          <http://example.org/CVE/158078> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

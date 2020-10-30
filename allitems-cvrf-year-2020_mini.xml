@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<cvrfdoc xmlns="http://www.icasi.org/CVRF/schema/cvrf/1.1" xmlns:cvrf="http://www.icasi.org/CVRF/schema/cvrf/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.icasi.org/CVRF/schema/cvrf/1.1 http://www.icasi.org/CVRF/schema/cvrf/1.1/cvrf.xsd">
+   <DocumentTitle xml:lang="en">CVE Output in CVRF 1.1: 20201028</DocumentTitle>
+   <DocumentType>CVE List</DocumentType>
+   <DocumentPublisher Type="Other">
+      <ContactDetails>cve@mitre.org</ContactDetails>
+      <IssuingAuthority>The MITRE Corporation</IssuingAuthority>
+   </DocumentPublisher>
+   <DocumentTracking>
+      <Identification>
+         <ID>20201028-111748</ID>
+      </Identification>
+      <Status>Interim</Status>
+      <Version>2020.10.28.11</Version>
+      <RevisionHistory>
+         <Revision>
+            <Number>1</Number>
+            <Date>2020-10-28T11:17:48</Date>
+            <Description>Initial public release</Description>
+         </Revision>
+      </RevisionHistory>
+      <InitialReleaseDate>2020-10-28T11:17:48</InitialReleaseDate>
+      <InitialReleaseDate>2020-10-28T11:17:48</InitialReleaseDate>
+      <Generator>
+         <Engine>MITRE Custom CVE-to-CVRF Converter 2.0</Engine>
+      </Generator>
+   </DocumentTracking>
+   <DocumentNotes>
+      <Note Audience="All" Ordinal="1" Title="CVE List" Type="General">This is a list of CVE Identifiers as published by MITRE.</Note>
+      <Note Audience="All" Ordinal="2" Title="License" Type="General">The MITRE Corporation (MITRE) hereby grants you a non-exclusive,  royalty-free license to use Common Vulnerabilities and Exposures (CVE (R)) for research, development, and commercial purposes. Any copy you make for such purposes is authorized provided that you reproduce MITREs copyright designation and this license in any such copy.</Note>
+      <Note Audience="All" Ordinal="3" Title="Disclaimers" Type="General">ALL DOCUMENTS AND THE INFORMATION CONTAINED THEREIN ARE PROVIDED ON AN &amp;quot;AS IS&amp;quot; BASIS AND THE CONTRIBUTOR, THE ORGANIZATION HE/SHE REPRESENTS OR IS SPONSORED BY (IF ANY), THE MITRE CORPORATION, ITS BOARD OF TRUSTEES, OFFICERS, AGENTS, AND EMPLOYEES, DISCLAIM ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTY THAT THE USE OF THE INFORMATION THEREIN WILL NOT INFRINGE ANY RIGHTS OR ANY IMPLIED WARRANTIES OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.</Note>
+   </DocumentNotes>
+   <Vulnerability Ordinal="158066" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0001</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In getProcessRecordLocked of ActivityManagerService.java isolated apps are not handled correctly. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android Versions: Android-8.0, Android-8.1, Android-9, and Android-10 Android ID: A-140055304</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-01-08</Note>
+      </Notes>
+      <CVE>CVE-2020-0001</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158067" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0002</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In ih264d_init_decoder of ih264d_api.c, there is a possible out of bounds write due to a use after free. This could lead to remote code execution with no additional execution privileges needed. User interaction is needed for exploitation Product: Android Versions: Android-8.0, Android-8.1, Android-9, and Android-10 Android ID: A-142602711</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-01-29</Note>
+      </Notes>
+      <CVE>CVE-2020-0002</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158068" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0003</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In onCreate of InstallStart.java, there is a possible package validation bypass due to a time-of-check time-of-use vulnerability. This could lead to local escalation of privilege with no additional execution privileges needed. User interaction is needed for exploitation. Product: Android Versions: Android-8.0 Android ID: A-140195904</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-01-29</Note>
+      </Notes>
+      <CVE>CVE-2020-0003</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158069" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0004</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In generateCrop of WallpaperManagerService.java, there is a possible sysui crash due to image exceeding maximum texture size. This could lead to local denial of service with no additional execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.0 Android-8.1 Android-9 Android-10Android ID: A-120847476</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-01-29</Note>
+      </Notes>
+      <CVE>CVE-2020-0004</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158070" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0005</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In btm_read_remote_ext_features_complete of btm_acl.cc, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android-8.0 Android-8.1 Android-9 Android-10Android ID: A-141552859</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-02-13</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-02-13</Note>
+      </Notes>
+      <CVE>CVE-2020-0005</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-02-01</URL>
+            <Description>MISC:https://source.android.com/security/bulletin/2020-02-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158071" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0006</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In rw_i93_send_cmd_write_single_block of rw_i93.cc, there is a possible information disclosure of heap memory due to uninitialized data. This could lead to remote information disclosure in the NFC server with no additional execution privileges needed. User interaction is needed for exploitation. Product: Android Versions: Android-8.0, Android-8.1, Android-9, and Android-10 Android ID: A-139738828</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-01-29</Note>
+      </Notes>
+      <CVE>CVE-2020-0006</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158072" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0007</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In flattenString8 of Sensor.cpp, there is a possible information disclosure of heap memory due to uninitialized data. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android Versions: Android-8.0, Android-8.1, Android-9, and Android-10 Android ID: A-141890807</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-01-29</Note>
+      </Notes>
+      <CVE>CVE-2020-0007</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158073" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0008</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In LowEnergyClient::MtuChangedCallback of low_energy_client.cc, there is a possible out of bounds read due to a race condition. This could lead to local information disclosure with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android Versions: Android-8.0, Android-8.1, Android-9, and Android-10 Android ID: A-142558228</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-01-29</Note>
+      </Notes>
+      <CVE>CVE-2020-0008</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158074" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0009</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In calc_vm_may_flags of ashmem.c, there is a possible arbitrary write to shared memory due to a permissions bypass. This could lead to local escalation of privilege by corrupting memory shared between processes, with no additional execution privileges needed. User interaction is not needed for exploitation. Product: Android Versions: Android kernel Android ID: A-142938932</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-01-08</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-06-10</Note>
+      </Notes>
+      <CVE>CVE-2020-0009</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-01-01</URL>
+            <Description>CONFIRM:https://source.android.com/security/bulletin/2020-01-01</Description>
+         </Reference>
+         <Reference>
+            <URL>http://packetstormsecurity.com/files/155903/Android-ashmem-Read-Only-Bypasses.html</URL>
+            <Description>MISC:http://packetstormsecurity.com/files/155903/Android-ashmem-Read-Only-Bypasses.html</Description>
+         </Reference>
+         <Reference>
+            <URL>https://lists.debian.org/debian-lts-announce/2020/06/msg00011.html</URL>
+            <Description>MLIST:[debian-lts-announce] 20200609 [SECURITY] [DLA 2241-1] linux security update</Description>
+         </Reference>
+         <Reference>
+            <URL>https://lists.debian.org/debian-lts-announce/2020/06/msg00013.html</URL>
+            <Description>MLIST:[debian-lts-announce] 20200610 [SECURITY] [DLA 2241-2] linux security update</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158075" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0010</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In fpc_ta_get_build_info of fpc_ta_kpi.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-137014293References: N/A</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-03-10</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-03-10</Note>
+      </Notes>
+      <CVE>CVE-2020-0010</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-03-01</URL>
+            <Description>MISC:https://source.android.com/security/bulletin/2020-03-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158076" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0011</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In get_auth_result of fpc_ta_hw_auth.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-137648045References: N/A</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-03-10</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-03-10</Note>
+      </Notes>
+      <CVE>CVE-2020-0011</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-03-01</URL>
+            <Description>MISC:https://source.android.com/security/bulletin/2020-03-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158077" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0012</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">In fpc_ta_pn_get_unencrypted_image of fpc_ta_pn.c, there is a possible out of bounds write due to a missing bounds check. This could lead to local escalation of privilege with System execution privileges needed. User interaction is not needed for exploitation.Product: AndroidVersions: Android kernelAndroid ID: A-137648844</Note>
+         <Note Ordinal="2" Title="Published" Type="Other">2020-03-10</Note>
+         <Note Ordinal="3" Title="Modified" Type="Other">2020-03-10</Note>
+      </Notes>
+      <CVE>CVE-2020-0012</CVE>
+      <References>
+         <Reference>
+            <URL>https://source.android.com/security/bulletin/2020-03-01</URL>
+            <Description>MISC:https://source.android.com/security/bulletin/2020-03-01</Description>
+         </Reference>
+      </References>
+   </Vulnerability>
+   <Vulnerability Ordinal="158078" xmlns="http://www.icasi.org/CVRF/schema/vuln/1.1">
+      <Title>CVE-2020-0013</Title>
+      <Notes>
+         <Note Ordinal="1" Type="Description">** RESERVED ** This candidate has been reserved by an organization or individual that will use it when announcing a new security problem. When the candidate has been publicized, the details for this candidate will be provided.</Note>
+      </Notes>
+      <CVE>CVE-2020-0013</CVE>
+      <References/>
+   </Vulnerability>
+</cvrfdoc>
