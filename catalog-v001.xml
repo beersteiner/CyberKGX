@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/FacilityOntology" uri="https://github.com/CommonCoreOntology/CommonCoreOntologies/raw/master/FacilityOntology.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/MergedAllCoreOntology" uri="https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology_v1.3.ttl"/>
+    <uri id="Imports Wizard Entry" name="http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/MergedAllCoreOntology" uri="https://raw.githubusercontent.com/CommonCoreOntology/CommonCoreOntologies/master/cco-merged/MergedAllCoreOntology_v1.3.ttl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base=""/>
 </catalog>

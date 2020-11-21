@@ -1,0 +1,276 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.w3.org/2002/07/owl#> .
+
+[ rdf:type owl:Ontology ;
+   owl:imports <http://www.ontologyrepository.com/CommonCoreOntologies/Mid/2020-09-23/MergedAllCoreOntology>
+ ] .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/designates
+#<http://www.ontologyrepository.com/CommonCoreOntologies/designates> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.ontologyrepository.com/CommonCoreOntologies/is_about
+#<http://www.ontologyrepository.com/CommonCoreOntologies/is_about> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://example.org/CVE/158066
+<http://example.org/CVE/158066> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158066/Notes/Note/1
+<http://example.org/CVE/158066/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158066> .
+
+
+###  http://example.org/CVE/158067
+<http://example.org/CVE/158067> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158067/Notes/Note/1
+<http://example.org/CVE/158067/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158067> .
+
+
+###  http://example.org/CVE/158068
+<http://example.org/CVE/158068> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158068/Notes/Note/1
+<http://example.org/CVE/158068/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158068> .
+
+
+###  http://example.org/CVE/158069
+<http://example.org/CVE/158069> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158069/Notes/Note/1
+<http://example.org/CVE/158069/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158069> .
+
+
+###  http://example.org/CVE/158070
+<http://example.org/CVE/158070> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158070/Notes/Note/1
+<http://example.org/CVE/158070/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158070> .
+
+
+###  http://example.org/CVE/158071
+<http://example.org/CVE/158071> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158071/Notes/Note/1
+<http://example.org/CVE/158071/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158071> .
+
+
+###  http://example.org/CVE/158072
+<http://example.org/CVE/158072> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158072/Notes/Note/1
+<http://example.org/CVE/158072/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158072> .
+
+
+###  http://example.org/CVE/158073
+<http://example.org/CVE/158073> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158073/Notes/Note/1
+<http://example.org/CVE/158073/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158073> .
+
+
+###  http://example.org/CVE/158074
+<http://example.org/CVE/158074> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158074/Notes/Note/1
+<http://example.org/CVE/158074/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158074> .
+
+
+###  http://example.org/CVE/158075
+<http://example.org/CVE/158075> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158075/Notes/Note/1
+<http://example.org/CVE/158075/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158075> .
+
+
+###  http://example.org/CVE/158076
+<http://example.org/CVE/158076> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158076/Notes/Note/1
+<http://example.org/CVE/158076/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158076> .
+
+
+###  http://example.org/CVE/158077
+<http://example.org/CVE/158077> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158077/Notes/Note/1
+<http://example.org/CVE/158077/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158077> .
+
+
+###  http://example.org/CVE/158078
+<http://example.org/CVE/158078> rdf:type owl:NamedIndividual ,
+                                         <http://www.ontologyrepository.com/CommonCoreOntologies/Vulnerability> .
+
+
+###  http://example.org/CVE/158078/Notes/Note/1
+<http://example.org/CVE/158078/Notes/Note/1> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DescriptiveInformationContentEntity> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158078> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0001
+<http://example.org/CVE/Title/CVE-2020-0001> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158066> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0002
+<http://example.org/CVE/Title/CVE-2020-0002> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158067> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0003
+<http://example.org/CVE/Title/CVE-2020-0003> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158068> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0004
+<http://example.org/CVE/Title/CVE-2020-0004> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158069> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0005
+<http://example.org/CVE/Title/CVE-2020-0005> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158070> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0006
+<http://example.org/CVE/Title/CVE-2020-0006> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158071> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0007
+<http://example.org/CVE/Title/CVE-2020-0007> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158072> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0008
+<http://example.org/CVE/Title/CVE-2020-0008> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158073> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0009
+<http://example.org/CVE/Title/CVE-2020-0009> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158074> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0010
+<http://example.org/CVE/Title/CVE-2020-0010> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158075> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0011
+<http://example.org/CVE/Title/CVE-2020-0011> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158076> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0012
+<http://example.org/CVE/Title/CVE-2020-0012> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158077> .
+
+
+###  http://example.org/CVE/Title/CVE-2020-0013
+<http://example.org/CVE/Title/CVE-2020-0013> rdf:type owl:NamedIndividual ,
+                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/DesignativeName> ;
+                                             <http://www.ontologyrepository.com/CommonCoreOntologies/designates> <http://example.org/CVE/158078> .
+
+
+###  http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-01-01
+<http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-01-01> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity> ;
+                                                                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158066> ,
+                                                                                                                                                               <http://example.org/CVE/158067> ,
+                                                                                                                                                               <http://example.org/CVE/158068> ,
+                                                                                                                                                               <http://example.org/CVE/158069> ,
+                                                                                                                                                               <http://example.org/CVE/158071> ,
+                                                                                                                                                               <http://example.org/CVE/158072> ,
+                                                                                                                                                               <http://example.org/CVE/158073> ,
+                                                                                                                                                               <http://example.org/CVE/158074> .
+
+
+###  http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-02-01
+<http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-02-01> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity> ;
+                                                                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158070> .
+
+
+###  http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-03-01
+<http://example.org/CVE/https%3A%2F%2Fsource.android.com%2Fsecurity%2Fbulletin%2F2020-03-01> rdf:type owl:NamedIndividual ,
+                                                                                                      <http://www.ontologyrepository.com/CommonCoreOntologies/InformationContentEntity> ;
+                                                                                             <http://www.ontologyrepository.com/CommonCoreOntologies/is_about> <http://example.org/CVE/158075> ,
+                                                                                                                                                               <http://example.org/CVE/158076> ,
+                                                                                                                                                               <http://example.org/CVE/158077> .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

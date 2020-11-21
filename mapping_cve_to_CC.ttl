@@ -22,7 +22,7 @@
     rr:predicate rdf:type;
     rr:objectMap [
       rr:constant cc:Vulnerability;
-    ]
+    ];
   ].
 
 
@@ -34,19 +34,84 @@
   ];
 
   rr:subjectMap [
-    rr:template "http://example.org/CVE/{References/Reference/URL}";
+    rr:template "{References/Reference/URL}";
   ];
 
   rr:predicateObjectMap [
     rr:predicate rdf:type;
     rr:objectMap [
       rr:constant cc:InformationContentEntity;
-    ]
+    ];
   ];
 
   rr:predicateObjectMap [
     rr:predicate cc:is_about;
     rr:objectMap [
       rr:parentTriplesMap <#VulnMap>;
-    ]
+	rr:joinCondition [
+	  rr:parent "@Ordinal";
+	  rr:child "@Ordinal";
+	];
+    ];
   ].
+
+  <#TitleMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "allitems-cvrf-year-2020_mini.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/cvrfdoc/Vulnerability";
+  ];
+
+  rr:subjectMap [
+    rr:template "http://example.org/CVE/Title/{Title}";
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      rr:constant cc:DesignativeName;
+    ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate cc:designates;
+    rr:objectMap [
+      rr:parentTriplesMap <#VulnMap>;
+        rr:joinCondition [
+          rr:parent "@Ordinal";
+          rr:child "@Ordinal";
+        ];
+    ];
+  ].
+
+<#NoteMap> a rr:TriplesMap;
+  rml:logicalSource [
+    rml:source "allitems-cvrf-year-2020_mini.xml";
+    rml:referenceFormulation ql:XPath;
+    rml:iterator "/cvrfdoc/Vulnerability";
+  ];
+
+  rr:subjectMap [
+    rr:template "http://example.org/CVE/{Notes/Note}";
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      rr:constant cc:DescriptiveInformationContentEntity;
+    ];
+  ];
+
+  rr:predicateObjectMap [
+    rr:predicate cc:is_about;
+    rr:objectMap [
+      rr:parentTriplesMap <#VulnMap>;
+        rr:joinCondition [
+          rr:parent "@Ordinal";
+          rr:child "@Ordinal";
+        ];
+    ];
+  ].
+
+
+
