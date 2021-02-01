@@ -1,0 +1,87 @@
+<#VulnMap> a rr:TriplesMap;
+  rml:logicalSource <#CVESource>;
+  rr:subjectMap [
+    rr:template "http://example.org/CVE/{@Ordinal}" ];
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      rr:constant cc:Vulnerability
+    ]
+  ]
+.
+
+#<#RefMap> a rr:TriplesMap;
+#  rml:logicalSource <#CVESource>;
+#
+#  rr:subjectMap [
+#    rr:template "{References/Reference/URL}";
+#  ];
+#
+#  rr:predicateObjectMap [
+#    rr:predicate rdf:type;
+#    rr:objectMap [
+#      rr:constant cc:InformationContentEntity;
+#    ];
+#  ];
+#
+#  rr:predicateObjectMap [
+#    rr:predicate cc:is_about;
+#    rr:objectMap [
+#      rr:parentTriplesMap <#VulnMap>;
+#	rr:joinCondition [
+#	  rr:parent "@Ordinal";
+#	  rr:child "@Ordinal";
+#	];
+#    ];
+#  ].
+#
+#<#TitleMap> a rr:TriplesMap;
+#  rml:logicalSource <#CVESource>;
+#
+#  rr:subjectMap [
+#    rr:template "http://example.org/CVE/Title/{Title}";
+#  ];
+#
+#  rr:predicateObjectMap [
+#    rr:predicate rdf:type;
+#    rr:objectMap [
+#      rr:constant cc:DesignativeName;
+#    ];
+#  ];
+#
+#  rr:predicateObjectMap [
+#    rr:predicate cc:designates;
+#    rr:objectMap [
+#      rr:parentTriplesMap <#VulnMap>;
+#      rr:joinCondition [
+#        rr:parent "@Ordinal";
+#        rr:child "@Ordinal";
+#      ];
+#    ];
+#  ].
+#
+#<#NoteMap> a rr:TriplesMap;
+#  rml:logicalSource <#CVESource>;
+#
+#  rr:subjectMap [
+#    rr:template "http://example.org/CVE/{Notes/Note}";
+#  ];
+#
+#  rr:predicateObjectMap [
+#    rr:predicate rdf:type;
+#    rr:objectMap [
+#      rr:constant cc:DescriptiveInformationContentEntity;
+#    ];
+#  ];
+#
+#  rr:predicateObjectMap [
+#    rr:predicate cc:is_about;
+#    rr:objectMap [
+#      rr:parentTriplesMap <#VulnMap>;
+#      rr:joinCondition [
+#        rr:parent "@Ordinal";
+#        rr:child "@Ordinal";
+#      ];
+#    ];
+#  ].
+#

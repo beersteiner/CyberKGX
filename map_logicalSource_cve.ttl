@@ -1,0 +1,6 @@
+<#CVESource> a rml:logicalSource;
+  rml:source "minidata/allitems-cvrf-year-2020_mini.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/cvrfdoc/Vulnerability"
+.
+

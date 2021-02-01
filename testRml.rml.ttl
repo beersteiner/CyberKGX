@@ -1,0 +1,58 @@
+@prefix rml: <http://semweb.mmlab.be/ns/rml#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix : <http://example.org/rules/> .
+@prefix cc: <http://www.ontologyrepository.com/CommonCoreOntologies/> .
+@base <http://example.com/ns#> .
+
+
+<#CVESource> a rml:logicalSource;
+  rml:source "minidata/allitems-cvrf-year-2020_mini.xml";
+  rml:referenceFormulation ql:XPath;
+  rml:iterator "/cvrfdoc/Vulnerability"
+.
+
+<#VulnMap> a rr:TriplesMap;
+  rml:logicalSource <#CVESource>;
+  rr:subjectMap [
+    rr:template "http://example.org/CVE/{@Ordinal}" ];
+  rr:predicateObjectMap [
+    rr:predicate rdf:type;
+    rr:objectMap [
+      rr:constant cc:Vulnerability
+    ]
+  ]
+.
+#
+#:TriplesMap rr:subjectMap [
+#  rr:template "http://example.org/character/{@id}"
+#].
+#
+#:TriplesMap rr:predicateObjectMap [
+#  rr:predicate rdf:type;
+#  rr:objectMap [
+#   rr:constant schema:Person
+# ]
+#].
+#
+#:TriplesMap rr:predicateObjectMap [
+#  rr:predicate schema:givenName;
+#  rr:objectMap [
+#    rml:reference "firstname"
+#  ]
+#].
+#
+#:TriplesMap rr:predicateObjectMap [
+#  rr:predicate schema:lastName;
+#  rr:objectMap [
+#    rml:reference "lastname"
+#  ]
+#].
+#
+#:TriplesMap rr:predicateObjectMap [
+#  rr:predicate dbo:hairColor;
+#  rr:objectMap [
+#    rml:reference "hair"
+#  ]
+#].
